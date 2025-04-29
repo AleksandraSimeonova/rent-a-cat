@@ -5,10 +5,12 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
+    "dev": "lite-server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }
