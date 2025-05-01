@@ -1,14 +1,9 @@
-import {render as baseRender, html} from "../../node_modules/lit-html/lit-html.js"
+import { render, html } from "../../node_modules/lit-html/lit-html.js"
 
-let rootElement = document.getElementById('root');
 
-function render(templateResult){
 
-    return baseRender(templateResult, rootElement)
-}
+export {
 
-export{
-    baseRender,
-    render, 
+    render,
     html
 }
