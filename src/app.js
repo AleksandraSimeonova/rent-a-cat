@@ -1,3 +1,7 @@
-import homeView from "./homeView.js";
+import homeView from "./view/homeView.js";
+import page from "./lib/page.js";
 
-homeView();
+
+page('/', homeView);
+
+page();
