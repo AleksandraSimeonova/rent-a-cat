@@ -3,7 +3,7 @@ import { render, html } from "../lib/lit-html.js";
 let rootElement = document.getElementById('root');
 
 const layoutTemlate = (body) => html`
-<div class="bg-white">
+<div class="h-full bg-white">
   <header class="absolute inset-x-0 top-0 z-50">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
@@ -23,11 +23,11 @@ const layoutTemlate = (body) => html`
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="/" class="text-sm/6 font-semibold text-gray-900">Home Page</a>
         <a href="/cats" class="text-sm/6 font-semibold text-gray-900">Cats</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Marketplace</a>
+        <a href="/login" class="text-sm/6 font-semibold text-gray-900">Login</a>
         <a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="/login" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
