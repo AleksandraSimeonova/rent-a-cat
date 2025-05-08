@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "rent-a-cat"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "rent-a-cat-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]

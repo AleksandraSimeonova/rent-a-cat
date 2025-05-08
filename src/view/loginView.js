@@ -1,6 +1,6 @@
 import {html} from "../lib/lit-html.js"
-
-import { getAuth, signInWithEmailAndPassword } from "../../node_modules/firebase/firebase-auth.js";
+import { signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js'
+import {auth} from "../config/firebaseInit.js"
 
 
 const template = (onSubmit) => html`
@@ -56,13 +56,16 @@ async function loginFormSubmitHandler(e){
   const {email, password} = Object.fromEntries(formData);
 
   try{
-  const auth = getAuth();
-  const result = await signInWithEmailAndPassword(auth, email, password)
+
+  const userCredential = await signInWithEmailAndPassword(auth, email, password)
+  console.log(userCredential);
+  console.log("ok");
+  
+  
   }catch(err){
     console.log(err.message);
     
   }
 
-  console.log("Submit");
-
+  
 }
