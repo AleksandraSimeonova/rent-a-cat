@@ -71,6 +71,8 @@ const layoutTemlate = (body) => html`
 `
 
 export default function(ctx, next){
+  console.log(ctx.user);
+  console.log(ctx.isAuthenticated);
     ctx.render = (templateResult) => {
         render(layoutTemlate(templateResult), rootElement)
     }
